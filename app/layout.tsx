@@ -16,10 +16,10 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
 });
 
-let title = "Loras – Generate AI Images with LoRAs";
-let description = "Generate AI Images with LoRAs in seconds.";
-let url = "https://www.loras.dev/";
-let sitename = "loras.dev";
+let title = "Spectara – Generate AI Images with different styles";
+let description = "Generate AI Images with different styles in seconds.";
+let url = "https://www.spectara.io/";
+let sitename = "spectara.io";
 
 export const metadata: Metadata = {
   // metadataBase: new URL(url),
@@ -55,9 +55,9 @@ export default function RootLayout({
       className={`h-full ${ibmPlexMono.variable} ${dmSans.variable}`}
     >
       <head>
-        <PlausibleProvider domain="loras.dev" />
+        <PlausibleProvider domain="spectara.io" />
       </head>
-      <body className="h-full min-h-full font-sans text-gray-900 antialiased">
+      <body className="h-full min-h-full font-sans bg-gray-900 text-gray-300 antialiased">
         <Providers>{children}</Providers>
       </body>
     </html>
