@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/dialog";
 import { Lora, LORAS } from "@/data/loras";
 import imagePlaceholder from "@/public/image-placeholder.png";
-import heroImage from "@/public/hero-image.png";
+import heroImage from "@/public/hero-image1.png";
 import {
   CheckCircleIcon,
   InformationCircleIcon,
@@ -98,7 +98,7 @@ export default function Home() {
         }}
       >
         <fieldset className="flex grow flex-col md:h-full md:flex-row md:overflow-hidden">
-          <div className="w-full bg-gray-100 md:max-w-sm md:overflow-y-auto">
+          <div className="w-full bg-gray-900 md:max-w-sm md:overflow-y-auto">
             <div className="mt-4 md:hidden">
               <Header />
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
               <div className="flex flex-col gap-8">
                 <div>
                   <p className="font-mono font-medium tracking-tight">
-                    Select a LoRA
+                    Select a style
                   </p>
                   <RadioGroup.Root
                     name="lora"
@@ -303,7 +303,7 @@ export default function Home() {
                             alt=""
                             src={heroImage}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/20 to-white" />
+                          
                         </div>
 
                         <div className="relative mt-2">
@@ -311,7 +311,7 @@ export default function Home() {
                             Create stylized images in seconds
                           </h1>
                           <p className="mt-3 text-balance px-4 text-center text-gray-500">
-                            Enter your prompt, choose a LoRA, and generate
+                            Enter your prompt, choose a style, and generate
                             beautiful images.
                           </p>
                         </div>
@@ -350,31 +350,15 @@ export default function Home() {
               </p>
 
               <div className="mt-8 flex items-center justify-center md:mt-0 md:justify-between md:gap-6">
-                <div className="flex gap-6 md:gap-2">
-                  <a
-                    href="https://github.com/Nutlope/loras-dev"
-                    target="_blank"
-                  >
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="inline-flex items-center gap-2"
-                    >
-                      <GithubIcon className="size-4" />
-                      GitHub
-                    </Button>
-                  </a>
-                  <a href="https://x.com/nutlope" target="_blank">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="inline-flex items-center gap-2"
-                    >
-                      <XIcon className="size-3" />
-                      Twitter
-                    </Button>
-                  </a>
-                </div>
+              <div className="flex gap-6 md:gap-2">
+  <a href="https://github.com/luminailabs/spectara" target="_blank" rel="noopener noreferrer">
+    <GithubIcon className="size-6 text-gray-400 hover:text-white transition" />
+  </a>
+  <a href="https://x.com/spectara_io" target="_blank" rel="noopener noreferrer">
+    <XIcon className="size-6 text-gray-400 hover:text-white transition" />
+  </a>
+</div>
+
               </div>
             </footer>
           </div>
