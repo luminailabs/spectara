@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/public/logo.png";
+import logo from "@/public/logoo.png";
 
 export default function Header() {
   return (
@@ -7,7 +7,7 @@ export default function Header() {
       <a href="https://togetherai.link" target="_blank">
         <Image alt="" className="h-8 w-auto" src={logo} />
       </a>
-      <p className="font-mono text-gray-600">Generate AI Images with LoRAs</p>
+      <p className="font-mono text-gray-600">Generate AI Images with Spectara</p>
     </div>
   );
 }
