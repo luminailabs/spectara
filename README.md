@@ -1,5 +1,5 @@
-<a href="https://www.spectara.io">
-  <h1 align="center">Spectara</h1>
+<a href="https://www.imagineering.pro">
+  <h1 align="center">Imagineering</h1>
 </a>
 
 <p align="center">
@@ -16,6 +16,6 @@
 
 ## Cloning & running
 
-1. Clone the repo: `git clone https://github.com/luminailabs/spectara`
+1. Clone the repo: `git clone https://github.com/luminailabs/imagineering`
 2. Create a `.env.local` file and add your [Together AI API key](https://togetherai.link): `TOGETHER_API_KEY=`
 3. Run `npm install` and `npm run dev` to install dependencies and run locally
